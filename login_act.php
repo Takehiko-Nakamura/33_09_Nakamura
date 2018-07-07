@@ -17,7 +17,7 @@ if($res==false){
 
 $val = $stmt->fetch();
 
-if( $val["id"] != "" ){
+if($val["id"] != "" ){
   $_SESSION["chk_ssid"]  = session_id();
   $_SESSION["kanri_flg"] = $val['kanri_flg'];
   $_SESSION["name"]      = $val['name'];

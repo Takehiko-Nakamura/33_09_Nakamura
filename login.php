@@ -69,7 +69,7 @@
 <title>ログイン画面</title>
 </head>
 <body>
-    <form action="login_act.php" method="POST">
+    <form action="login-insert.php" method="POST">
         <table>
             <tr>
                 <th>ログインID</th>

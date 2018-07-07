@@ -24,7 +24,7 @@ $message    = $_POST["message"];
 include("functions.php");
 $pdo = db_conn();
 
-$sql = "INSERT INTO gs_bm_table (id, name, kana, postalcode, address, mail, motive, message, indate) 
+$sql = "INSERT INTO gs_db01 (id, name, kana, postalcode, address, mail, motive, message, indate) 
 VALUES (NULL, :a1, :a2, :a3, :a4, :a5, :a6, :a7, sysdate())";
 
 $stmt = $pdo->prepare($sql);
